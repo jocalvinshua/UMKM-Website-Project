@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import 'tailwindcss';
+
+:root {
+    --color-primary: #4fbf8b;
+    --color-primary-dull: #aeffd9;
+}
+
+/* Tailwind custom palette example */
+@layer base {
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .text-primary-dull {
+    color: var(--color-primary-dull);
+  }
+  .bg-primary-dull {
+    background-color: var(--color-primary-dull);
+  }
+}
+
+.noScrollBar::-webkit-scrollbar{
+  display: none;
+}
